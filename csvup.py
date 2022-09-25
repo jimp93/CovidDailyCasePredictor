@@ -31,7 +31,7 @@ while True:
                             """ + difference
                 context = ssl.create_default_context()
                 with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-                    server.login("jamespythmail@gmail.com", "Waddler8")
+                    server.login("jamespythmail@gmail.com", "xxx")
                     server.sendmail(sender_email, receiver_email, message)
                     server.sendmail(sender_email, r_email, message)
                     server.quit()
